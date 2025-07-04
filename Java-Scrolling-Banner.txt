@@ -1,0 +1,45 @@
+import java.awt.*;
+import java.io.*;
+
+class MyBanner extends Frame implements Runnable {
+    String name = " My Name Is Rohit. ";
+
+    MyBanner() {
+        setLayout(null);
+        setBackground(Color.MAGENTA);
+        setForeground(Color.ORANGE);
+        setSize(800, 200);  // Set size for the frame
+    }
+
+    public void paint(Graphics g) {
+        Font f = new Font("Arial", Font.ITALIC, 40);
+        g.setFont(f);
+        g.drawString(name, 100, 100);
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            repaint();
+            try {
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+            // Rotate the string
+            char ch = name.charAt(0);
+            name = name.substring(1) + ch;
+        }
+    }
+}
+
+public class ScrollingBannerApp {
+    public static void main(String[] args) {
+        MyBanner myBanner = new MyBanner();
+        myBanner.setTitle("Scrolling Banner");
+        myBanner.setVisible(true);
+
+        Thread thread = new Thread(myBanner);
+        thread.start();
+    }
+}
