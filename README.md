@@ -32,7 +32,7 @@ This is a simple Java GUI mini project that displays a scrolling text banner usi
 ```bash
 javac ScrollingBannerApp.java
 java ScrollingBannerApp
-![image](https://github.com/user-attachments/assets/4b2e1a2d-f3bf-43b3-a064-10de7c41d563)
+<img width="1919" height="1010" alt="Image" src="https://github.com/user-attachments/assets/78084377-6c8d-422e-9799-f40f7f34ba74" />
 
 
 
