@@ -26,12 +26,19 @@ This is a simple Java GUI mini project that displays a scrolling text banner usi
 - Java installed on your system (JDK 8+)
 - Any Java IDE (like IntelliJ IDEA, Eclipse, NetBeans) or terminal/command prompt
 
+![image](https://github.com/user-attachments/assets/9fd863f5-6b3d-46d8-b736-42f27c6e1e45)
+
+
+
 ### ▶️ Steps to Run
 
 #### Using Terminal (Command Line):
 ```bash
 javac ScrollingBannerApp.java
 java ScrollingBannerApp
+
+
+
 
 
 
